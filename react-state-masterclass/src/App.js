@@ -7,7 +7,7 @@ export default function Messenger() {
   const [to, setTo] = useState(contacts[0]);
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-4xl font-extrabold dark:text-white mb-5">Managing State</h1>
+      <h1 className="text-4xl font-extrabold dark:text-white mb-5">Managing State in React</h1>
       <div className="flex flex-row space-x-8 p-8 bg-white shadow-lg rounded-lg mb-5 round">
         <ContactList
         contacts={contacts}
