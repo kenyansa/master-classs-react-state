@@ -3,10 +3,11 @@ import { useState } from 'react';
 export default function Chat({ contact }) {
   const [text, setText] = useState('');
   return (
-    <section className="chat">
+    <section className="flex flex-col w-full p-4 bg-white rounded-lg shadow-md">
       <textarea
+        className="w-full p-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         value={text}
-        placeholder={'Chat to ' + contact.name}
+        placeholder={`Chat with ${contact.name}`}
         onChange={e => setText(e.target.value)}
       />
       <br />
